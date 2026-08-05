@@ -1,0 +1,1478 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="light">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>DesignCraft — UI/UX Portfolio | HCI Design Showcase</title>
+  <meta name="description" content="Premium UI/UX Design Portfolio showcasing high-fidelity Figma prototypes, HCI principles, and user-centered design methodology. Explore interactive design prototypes and case studies." />
+  <meta name="keywords" content="UI/UX Design, Portfolio, Figma, HCI, Human Computer Interaction, Prototyping, User Experience" />
+  <meta property="og:title" content="DesignCraft — UI/UX Portfolio" />
+  <meta property="og:description" content="Premium UI/UX Design Portfolio showcasing high-fidelity Figma prototypes and HCI principles." />
+  <meta property="og:type" content="website" />
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&family=Poppins:wght@300;400;500;600;700;800;900&display=swap" />
+  <meta name="theme-color" content="#6366f1" />
+</head>
+<body>
+
+  <!-- ═══════════════════════════════════
+       LOADING SCREEN
+  ═══════════════════════════════════ -->
+  <div id="loader" role="progressbar" aria-label="Loading portfolio">
+    <div class="loader-logo">✦ DesignCraft</div>
+    <div class="loader-bar">
+      <div class="loader-fill"></div>
+    </div>
+    <p style="color:rgba(255,255,255,0.7);font-size:0.8rem;font-family:'Poppins',sans-serif;">
+      Loading premium experience…
+    </p>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       SCROLL PROGRESS
+  ═══════════════════════════════════ -->
+  <div id="scroll-progress" role="progressbar" aria-label="Scroll progress"></div>
+
+  <!-- ═══════════════════════════════════
+       CURSOR GLOW
+  ═══════════════════════════════════ -->
+  <div class="cursor-glow" id="cursorGlow" aria-hidden="true"></div>
+
+  <!-- ═══════════════════════════════════
+       NAVIGATION
+  ═══════════════════════════════════ -->
+  <nav id="navbar" role="navigation" aria-label="Main navigation">
+    <a href="#home" class="nav-logo" aria-label="DesignCraft Home">✦ DesignCraft</a>
+
+    <ul class="nav-links" role="list">
+      <li><a href="#home" class="active" aria-current="page">Home</a></li>
+      <li><a href="#about">About</a></li>
+      <li><a href="#projects">UI Projects</a></li>
+      <li><a href="#prototypes">Prototypes</a></li>
+      <li><a href="#process">Design Process</a></li>
+      <li><a href="#showcase">Gallery</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+
+    <div class="nav-actions">
+      <button class="theme-toggle" id="themeToggle" aria-label="Toggle dark/light mode" title="Toggle Theme">
+        🌙
+      </button>
+      <a href="#contact" class="nav-cta">Hire Me ✨</a>
+      <div class="hamburger" id="hamburger" aria-label="Open menu" aria-expanded="false" role="button" tabindex="0">
+        <span></span><span></span><span></span>
+      </div>
+    </div>
+  </nav>
+
+  <!-- Mobile Nav -->
+  <div class="mobile-nav" id="mobileNav" aria-hidden="true">
+    <a href="#home">🏠 Home</a>
+    <a href="#about">👤 About</a>
+    <a href="#projects">🎨 UI Projects</a>
+    <a href="#prototypes">📱 Prototypes</a>
+    <a href="#process">🔄 Design Process</a>
+    <a href="#skills">⚡ Skills</a>
+    <a href="#showcase">🖼️ Gallery</a>
+    <a href="#contact">📬 Contact</a>
+  </div>
+
+  <!-- ═══════════════════════════════════
+       HERO SECTION
+  ═══════════════════════════════════ -->
+  <section id="home" aria-label="Hero section">
+    <div class="hero-bg-orbs" aria-hidden="true">
+      <div class="orb orb-1"></div>
+      <div class="orb orb-2"></div>
+      <div class="orb orb-3"></div>
+    </div>
+
+    <div class="hero-container">
+      <!-- Content -->
+      <div class="hero-content">
+        <div class="hero-badge">
+          <span class="dot"></span>
+          Available for Freelance & Internships
+        </div>
+
+        <h1 class="hero-title">
+          Designing
+          <span class="gradient-text">Intuitive<br/>Digital</span>
+          Experiences
+        </h1>
+
+        <p class="hero-subtitle">
+          A UI/UX Design Portfolio showcasing high-fidelity prototypes crafted in Figma with a
+          usability-focused, human-centered design approach. Every pixel driven by HCI principles.
+        </p>
+
+        <div class="hero-actions">
+          <a href="#projects" class="btn btn-primary" id="hero-cta-projects" onclick="addRipple(event, this)">
+            🎨 View Projects
+          </a>
+          <a href="#contact" class="btn btn-secondary" id="hero-cta-contact" onclick="addRipple(event, this)">
+            📬 Contact Me
+          </a>
+        </div>
+
+        <div class="hero-stats">
+          <div class="hero-stat">
+            <span class="num">25+</span>
+            <span class="label">UI Projects</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">15+</span>
+            <span class="label">Prototypes</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">100+</span>
+            <span class="label">Screens</span>
+          </div>
+          <div class="hero-stat">
+            <span class="num">98%</span>
+            <span class="label">Satisfaction</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Hero Visual -->
+      <div class="hero-visual" aria-label="Figma prototype mockups for UI/UX portfolio">
+        <div class="mockup-container">
+
+          <!-- Real Figma hero mockup image with floating badge overlays -->
+          <div class="hero-img-wrap">
+            <div class="hero-img-glow" aria-hidden="true"></div>
+            <img
+              src="hero_mockup.png"
+              alt="Figma UI prototype showcasing Grocery App and Analytics Dashboard"
+              class="hero-mockup-img"
+              loading="eager"
+            />
+
+            <!-- Floating badge: Satisfaction -->
+            <div class="floating-card widget hero-badge-float" style="animation-delay:0.5s" aria-hidden="true">
+              <span class="w-num">98%</span>
+              <span class="w-label">✅ User Satisfaction</span>
+            </div>
+
+            <!-- Floating badge: Figma -->
+            <div class="floating-card mini hero-mini-float" style="animation-delay:2s" aria-hidden="true">
+              <div class="mini-icon">🎨</div>
+              <div class="mini-text">
+                <strong>Figma Pro</strong>
+                <p>25+ Components</p>
+              </div>
+            </div>
+
+            <!-- Floating badge: Award -->
+            <div class="floating-card mini hero-award-float" style="animation-delay:3.5s" aria-hidden="true">
+              <div class="mini-icon" style="background:linear-gradient(135deg,#f59e0b,#ef4444)">🏆</div>
+              <div class="mini-text">
+                <strong>Best Design</strong>
+                <p>HCI Showcase</p>
+              </div>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </div>
+
+    <!-- Scroll indicator -->
+    <div style="position:absolute;bottom:32px;left:50%;transform:translateX(-50%);display:flex;flex-direction:column;align-items:center;gap:8px;opacity:0.5;animation:bounce 2s ease infinite;" aria-hidden="true">
+      <span style="font-size:0.72rem;color:var(--text-muted);font-weight:500">Scroll to explore</span>
+      <span style="font-size:1rem">↓</span>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       ABOUT SECTION
+  ═══════════════════════════════════ -->
+  <section id="about" aria-label="About me">
+    <div class="about-grid max-w">
+      <!-- Visual -->
+      <div class="about-visual reveal-left">
+        <div class="about-img-wrap">
+          <img src="avatar_profile.png" alt="UI/UX Designer Profile Illustration" />
+          <div class="about-exp-badge">
+            <div class="exp-num">3+</div>
+            <div class="exp-label">Years in Design</div>
+          </div>
+          <div class="about-tool-badge">
+            <span style="font-size:1.2rem">🖌️</span>
+            <div>
+              <div style="font-size:0.75rem;font-weight:700;color:var(--text-primary)">Figma Expert</div>
+              <div style="font-size:0.65rem;color:var(--text-muted)">Auto Layout & Variants</div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content -->
+      <div class="about-content reveal-right">
+        <span class="section-tag">✦ About Me</span>
+        <h2 class="section-title">
+          Crafting Experiences,<br/><span>Not Just Interfaces</span>
+        </h2>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:16px;">
+          I'm a passionate UI/UX designer with a strong foundation in Human-Computer Interaction (HCI) principles.
+          My work centers on creating digital experiences that are intuitive, accessible, and delightful to use.
+        </p>
+        <p style="color:var(--text-muted);line-height:1.8;margin-bottom:24px;">
+          Every design decision I make is grounded in research, user empathy, and a deep understanding of
+          cognitive psychology. From wireframes to high-fidelity Figma prototypes, I follow a rigorous
+          user-centered design process that ensures every product meets real human needs.
+        </p>
+
+        <div style="display:grid;grid-template-columns:1fr 1fr;gap:16px;margin-bottom:28px;">
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="color:var(--primary);font-size:1rem">✓</span>
+            <span style="font-size:0.87rem;color:var(--text-secondary);font-weight:500">HCI Principles</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="color:var(--primary);font-size:1rem">✓</span>
+            <span style="font-size:0.87rem;color:var(--text-secondary);font-weight:500">Wireframing</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="color:var(--primary);font-size:1rem">✓</span>
+            <span style="font-size:0.87rem;color:var(--text-secondary);font-weight:500">Prototyping</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="color:var(--primary);font-size:1rem">✓</span>
+            <span style="font-size:0.87rem;color:var(--text-secondary);font-weight:500">Design Systems</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="color:var(--primary);font-size:1rem">✓</span>
+            <span style="font-size:0.87rem;color:var(--text-secondary);font-weight:500">Accessibility (WCAG)</span>
+          </div>
+          <div style="display:flex;align-items:center;gap:10px;">
+            <span style="color:var(--primary);font-size:1rem">✓</span>
+            <span style="font-size:0.87rem;color:var(--text-secondary);font-weight:500">Responsive Design</span>
+          </div>
+        </div>
+
+        <div class="skills-chips">
+          <span class="chip">Figma</span>
+          <span class="chip">Adobe XD</span>
+          <span class="chip">Photoshop</span>
+          <span class="chip">UX Research</span>
+          <span class="chip">Usability Testing</span>
+          <span class="chip">Design Thinking</span>
+          <span class="chip">User Personas</span>
+          <span class="chip">Journey Mapping</span>
+        </div>
+
+        <div style="margin-top:32px;display:flex;gap:16px;flex-wrap:wrap;">
+          <a href="#projects" class="btn btn-primary" onclick="addRipple(event,this)">🎨 View My Work</a>
+          <a href="#contact" class="btn btn-secondary" onclick="addRipple(event,this)">📄 Download CV</a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       PROJECTS SECTION
+  ═══════════════════════════════════ -->
+  <section id="projects" aria-label="Featured UI projects">
+    <div class="max-w">
+      <div class="section-header">
+        <span class="section-tag reveal">✦ Featured Work</span>
+        <h2 class="section-title reveal">High-Fidelity <span>UI Projects</span></h2>
+        <p class="section-subtitle reveal">
+          Each project is crafted with meticulous attention to detail, usability testing, and
+          user-centered design principles using Figma.
+        </p>
+      </div>
+
+      <div class="projects-grid">
+
+        <!-- Card 1: Grocery App -->
+        <article class="project-card reveal delay-1" aria-label="Online Grocery App project">
+          <div class="project-card-img">
+            <div class="project-mockup" style="background:linear-gradient(135deg,#667eea,#764ba2);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+                <span style="font-size:3.5rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.3))">🛒</span>
+                <div style="display:flex;gap:6px;">
+                  <div style="width:36px;height:64px;background:rgba(255,255,255,0.2);border-radius:8px;backdrop-filter:blur(10px)"></div>
+                  <div style="width:36px;height:64px;background:rgba(255,255,255,0.3);border-radius:8px;backdrop-filter:blur(10px)"></div>
+                  <div style="width:36px;height:64px;background:rgba(255,255,255,0.2);border-radius:8px;backdrop-filter:blur(10px)"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#" class="btn btn-secondary btn-sm" style="color:white;border-color:rgba(255,255,255,0.4);" onclick="showToast('🛒 Grocery App Prototype — Opening in Figma…')">
+                👁 Preview
+              </a>
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('📱 Downloading project details…')">
+                📥 Details
+              </a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Mobile App</span>
+              <span class="project-tag">E-Commerce</span>
+            </div>
+            <h3>Online Grocery App</h3>
+            <p>A clean, intuitive grocery shopping app with personalized recommendations, real-time stock tracking, and one-tap reorder. Designed for minimal cognitive load and maximum usability.</p>
+            <div class="project-footer">
+              <div class="figma-badge">
+                <svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path d="M19 28.5C19 23.8 22.9 20 27.5 20C32.1 20 36 23.9 36 28.5C36 33.1 32.1 37 27.5 37C22.9 37 19 33.1 19 28.5Z" fill="#1ABCFE"/>
+                  <path d="M2 47C2 42.4 5.9 38.5 10.5 38.5H19V47C19 51.6 15.1 55.5 10.5 55.5C5.9 55.5 2 51.6 2 47Z" fill="#0ACF83"/>
+                  <path d="M19 2V19.5H27.5C32.1 19.5 36 15.6 36 11C36 6.4 32.1 2.5 27.5 2.5H19Z" fill="#FF7262"/>
+                  <path d="M2 11C2 15.6 5.9 19.5 10.5 19.5H19V2.5H10.5C5.9 2.5 2 6.4 2 11Z" fill="#F24E1E"/>
+                  <path d="M2 28.5C2 33.1 5.9 37 10.5 37H19V20H10.5C5.9 20 2 23.9 2 28.5Z" fill="#A259FF"/>
+                </svg>
+                Figma Prototype
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="showToast('🛒 Opening Grocery App Prototype…');addRipple(event,this)">
+                View Prototype →
+              </button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 2: Banking Dashboard -->
+        <article class="project-card reveal delay-2" aria-label="Banking Dashboard project">
+          <div class="project-card-img">
+            <div class="project-mockup" style="background:linear-gradient(135deg,#0f2027,#203a43,#2c5364);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+                <span style="font-size:3.5rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.5))">💳</span>
+                <div style="display:flex;gap:4px;align-items:flex-end;">
+                  <div style="width:14px;height:30px;background:#6366f1;border-radius:3px;opacity:0.8"></div>
+                  <div style="width:14px;height:50px;background:#8b5cf6;border-radius:3px;opacity:0.8"></div>
+                  <div style="width:14px;height:40px;background:#06b6d4;border-radius:3px;opacity:0.8"></div>
+                  <div style="width:14px;height:60px;background:#6366f1;border-radius:3px;opacity:0.8"></div>
+                  <div style="width:14px;height:35px;background:#8b5cf6;border-radius:3px;opacity:0.8"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#" class="btn btn-secondary btn-sm" style="color:white;border-color:rgba(255,255,255,0.4);" onclick="showToast('💳 Banking Dashboard — Opening Preview…')">👁 Preview</a>
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('📊 Loading dashboard details…')">📥 Details</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Dashboard</span>
+              <span class="project-tag">FinTech</span>
+            </div>
+            <h3>Banking Dashboard</h3>
+            <p>A comprehensive financial management dashboard with real-time transaction tracking, budget visualization, dark theme, and accessible data presentation following WCAG 2.1 guidelines.</p>
+            <div class="project-footer">
+              <div class="figma-badge">
+                <svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5C19 23.8 22.9 20 27.5 20C32.1 20 36 23.9 36 28.5C36 33.1 32.1 37 27.5 37C22.9 37 19 33.1 19 28.5Z" fill="#1ABCFE"/><path d="M2 47C2 42.4 5.9 38.5 10.5 38.5H19V47C19 51.6 15.1 55.5 10.5 55.5C5.9 55.5 2 51.6 2 47Z" fill="#0ACF83"/><path d="M19 2V19.5H27.5C32.1 19.5 36 15.6 36 11C36 6.4 32.1 2.5 27.5 2.5H19Z" fill="#FF7262"/><path d="M2 11C2 15.6 5.9 19.5 10.5 19.5H19V2.5H10.5C5.9 2.5 2 6.4 2 11Z" fill="#F24E1E"/><path d="M2 28.5C2 33.1 5.9 37 10.5 37H19V20H10.5C5.9 20 2 23.9 2 28.5Z" fill="#A259FF"/></svg>
+                Figma Prototype
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="showToast('💳 Opening Banking Dashboard Prototype…');addRipple(event,this)">View Prototype →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 3: Hospital UI -->
+        <article class="project-card reveal delay-3" aria-label="Hospital Management UI project">
+          <div class="project-card-img">
+            <div class="project-mockup" style="background:linear-gradient(135deg,#11998e,#38ef7d);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+                <span style="font-size:3.5rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2))">🏥</span>
+                <div style="display:flex;gap:8px;">
+                  <div style="width:60px;height:40px;background:rgba(255,255,255,0.3);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.2rem">📋</div>
+                  <div style="width:60px;height:40px;background:rgba(255,255,255,0.25);border-radius:6px;display:flex;align-items:center;justify-content:center;font-size:1.2rem">💊</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#" class="btn btn-secondary btn-sm" style="color:white;border-color:rgba(255,255,255,0.4);" onclick="showToast('🏥 Hospital UI — Opening Preview…')">👁 Preview</a>
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('🏥 Loading hospital UI details…')">📥 Details</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Healthcare</span>
+              <span class="project-tag">Web App</span>
+            </div>
+            <h3>Hospital Management UI</h3>
+            <p>A clean, accessible medical management system featuring patient records, appointment scheduling, doctor dashboards, and emergency alerts. Prioritizes clarity and error prevention.</p>
+            <div class="project-footer">
+              <div class="figma-badge">
+                <svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5C19 23.8 22.9 20 27.5 20C32.1 20 36 23.9 36 28.5C36 33.1 32.1 37 27.5 37C22.9 37 19 33.1 19 28.5Z" fill="#1ABCFE"/><path d="M2 47C2 42.4 5.9 38.5 10.5 38.5H19V47C19 51.6 15.1 55.5 10.5 55.5C5.9 55.5 2 51.6 2 47Z" fill="#0ACF83"/><path d="M19 2V19.5H27.5C32.1 19.5 36 15.6 36 11C36 6.4 32.1 2.5 27.5 2.5H19Z" fill="#FF7262"/><path d="M2 11C2 15.6 5.9 19.5 10.5 19.5H19V2.5H10.5C5.9 2.5 2 6.4 2 11Z" fill="#F24E1E"/><path d="M2 28.5C2 33.1 5.9 37 10.5 37H19V20H10.5C5.9 20 2 23.9 2 28.5Z" fill="#A259FF"/></svg>
+                Figma Prototype
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="showToast('🏥 Opening Hospital UI Prototype…');addRipple(event,this)">View Prototype →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 4: E-commerce App -->
+        <article class="project-card reveal delay-1" aria-label="E-commerce Mobile App project">
+          <div class="project-card-img">
+            <div class="project-mockup" style="background:linear-gradient(135deg,#f7971e,#ffd200);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+                <span style="font-size:3.5rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2))">🛍️</span>
+                <div style="display:flex;gap:4px;">
+                  <div style="width:44px;height:60px;background:rgba(255,255,255,0.35);border-radius:8px;backdrop-filter:blur(4px)"></div>
+                  <div style="width:44px;height:60px;background:rgba(255,255,255,0.25);border-radius:8px;backdrop-filter:blur(4px)"></div>
+                  <div style="width:44px;height:60px;background:rgba(255,255,255,0.3);border-radius:8px;backdrop-filter:blur(4px)"></div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#" class="btn btn-secondary btn-sm" style="color:white;border-color:rgba(255,255,255,0.4);" onclick="showToast('🛍️ E-Commerce App — Opening Preview…')">👁 Preview</a>
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('🛍️ Loading details…')">📥 Details</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Mobile</span>
+              <span class="project-tag">Retail</span>
+            </div>
+            <h3>E-Commerce Mobile App</h3>
+            <p>A feature-rich shopping app with AR product preview, smart filters, wishlist, smooth checkout flow, and micro-animations that enhance the shopping experience without distraction.</p>
+            <div class="project-footer">
+              <div class="figma-badge">
+                <svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5C19 23.8 22.9 20 27.5 20C32.1 20 36 23.9 36 28.5C36 33.1 32.1 37 27.5 37C22.9 37 19 33.1 19 28.5Z" fill="#1ABCFE"/><path d="M2 47C2 42.4 5.9 38.5 10.5 38.5H19V47C19 51.6 15.1 55.5 10.5 55.5C5.9 55.5 2 51.6 2 47Z" fill="#0ACF83"/><path d="M19 2V19.5H27.5C32.1 19.5 36 15.6 36 11C36 6.4 32.1 2.5 27.5 2.5H19Z" fill="#FF7262"/><path d="M2 11C2 15.6 5.9 19.5 10.5 19.5H19V2.5H10.5C5.9 2.5 2 6.4 2 11Z" fill="#F24E1E"/><path d="M2 28.5C2 33.1 5.9 37 10.5 37H19V20H10.5C5.9 20 2 23.9 2 28.5Z" fill="#A259FF"/></svg>
+                Figma Prototype
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="showToast('🛍️ Opening E-Commerce Prototype…');addRipple(event,this)">View Prototype →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 5: Food Delivery -->
+        <article class="project-card reveal delay-2" aria-label="Food Delivery App project">
+          <div class="project-card-img">
+            <div class="project-mockup" style="background:linear-gradient(135deg,#eb3349,#f45c43);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+                <span style="font-size:3.5rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.2))">🍕</span>
+                <div style="display:flex;gap:8px;align-items:center;">
+                  <div style="width:70px;height:40px;background:rgba(255,255,255,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;gap:4px;font-size:0.9rem">🍔 🌮</div>
+                  <div style="width:50px;height:40px;background:rgba(255,255,255,0.3);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1rem">🚴</div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#" class="btn btn-secondary btn-sm" style="color:white;border-color:rgba(255,255,255,0.4);" onclick="showToast('🍕 Food Delivery App — Opening Preview…')">👁 Preview</a>
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('🍔 Loading details…')">📥 Details</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">Food-Tech</span>
+              <span class="project-tag">Mobile</span>
+            </div>
+            <h3>Food Delivery App</h3>
+            <p>A vibrant food delivery experience with live order tracking, personalized suggestions, restaurant discovery, and a frictionless ordering flow that reduces cognitive load at every step.</p>
+            <div class="project-footer">
+              <div class="figma-badge">
+                <svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5C19 23.8 22.9 20 27.5 20C32.1 20 36 23.9 36 28.5C36 33.1 32.1 37 27.5 37C22.9 37 19 33.1 19 28.5Z" fill="#1ABCFE"/><path d="M2 47C2 42.4 5.9 38.5 10.5 38.5H19V47C19 51.6 15.1 55.5 10.5 55.5C5.9 55.5 2 51.6 2 47Z" fill="#0ACF83"/><path d="M19 2V19.5H27.5C32.1 19.5 36 15.6 36 11C36 6.4 32.1 2.5 27.5 2.5H19Z" fill="#FF7262"/><path d="M2 11C2 15.6 5.9 19.5 10.5 19.5H19V2.5H10.5C5.9 2.5 2 6.4 2 11Z" fill="#F24E1E"/><path d="M2 28.5C2 33.1 5.9 37 10.5 37H19V20H10.5C5.9 20 2 23.9 2 28.5Z" fill="#A259FF"/></svg>
+                Figma Prototype
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="showToast('🍕 Opening Food Delivery Prototype…');addRipple(event,this)">View Prototype →</button>
+            </div>
+          </div>
+        </article>
+
+        <!-- Card 6: LMS -->
+        <article class="project-card reveal delay-3" aria-label="Learning Management System project">
+          <div class="project-card-img">
+            <div class="project-mockup" style="background:linear-gradient(135deg,#4776e6,#8e54e9);">
+              <div style="position:absolute;inset:0;display:flex;align-items:center;justify-content:center;flex-direction:column;gap:8px;">
+                <span style="font-size:3.5rem;filter:drop-shadow(0 4px 8px rgba(0,0,0,0.3))">📚</span>
+                <div style="display:flex;gap:6px;">
+                  <div style="width:50px;height:50px;background:rgba(255,255,255,0.2);border-radius:8px;display:flex;align-items:center;justify-content:center;font-size:1.4rem">🎓</div>
+                  <div style="display:flex;flex-direction:column;gap:4px;justify-content:center;">
+                    <div style="width:60px;height:6px;background:rgba(255,255,255,0.5);border-radius:3px"></div>
+                    <div style="width:45px;height:6px;background:rgba(255,255,255,0.35);border-radius:3px"></div>
+                    <div style="width:55px;height:6px;background:rgba(255,255,255,0.4);border-radius:3px"></div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="project-overlay" aria-hidden="true">
+              <a href="#" class="btn btn-secondary btn-sm" style="color:white;border-color:rgba(255,255,255,0.4);" onclick="showToast('📚 LMS — Opening Preview…')">👁 Preview</a>
+              <a href="#" class="btn btn-primary btn-sm" onclick="showToast('🎓 Loading LMS details…')">📥 Details</a>
+            </div>
+          </div>
+          <div class="project-body">
+            <div class="project-tags">
+              <span class="project-tag">EdTech</span>
+              <span class="project-tag">Web App</span>
+            </div>
+            <h3>Learning Management System</h3>
+            <p>A modern e-learning platform with course management, progress tracking, interactive quizzes, video lessons, and a gamified progress system that keeps learners engaged and motivated.</p>
+            <div class="project-footer">
+              <div class="figma-badge">
+                <svg width="14" height="14" viewBox="0 0 38 57" fill="none" xmlns="http://www.w3.org/2000/svg"><path d="M19 28.5C19 23.8 22.9 20 27.5 20C32.1 20 36 23.9 36 28.5C36 33.1 32.1 37 27.5 37C22.9 37 19 33.1 19 28.5Z" fill="#1ABCFE"/><path d="M2 47C2 42.4 5.9 38.5 10.5 38.5H19V47C19 51.6 15.1 55.5 10.5 55.5C5.9 55.5 2 51.6 2 47Z" fill="#0ACF83"/><path d="M19 2V19.5H27.5C32.1 19.5 36 15.6 36 11C36 6.4 32.1 2.5 27.5 2.5H19Z" fill="#FF7262"/><path d="M2 11C2 15.6 5.9 19.5 10.5 19.5H19V2.5H10.5C5.9 2.5 2 6.4 2 11Z" fill="#F24E1E"/><path d="M2 28.5C2 33.1 5.9 37 10.5 37H19V20H10.5C5.9 20 2 23.9 2 28.5Z" fill="#A259FF"/></svg>
+                Figma Prototype
+              </div>
+              <button class="btn btn-primary btn-sm" onclick="showToast('📚 Opening LMS Prototype…');addRipple(event,this)">View Prototype →</button>
+            </div>
+          </div>
+        </article>
+
+      </div><!-- /projects-grid -->
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       PROTOTYPES SECTION
+  ═══════════════════════════════════ -->
+  <section id="prototypes" style="background:var(--bg-secondary);" aria-label="Interactive prototypes">
+    <div class="max-w">
+      <div class="section-header">
+        <span class="section-tag reveal">✦ Prototypes</span>
+        <h2 class="section-title reveal">Interactive <span>Prototype Previews</span></h2>
+        <p class="section-subtitle reveal">Clickable high-fidelity prototypes demonstrating real user flows and interaction design.</p>
+      </div>
+
+      <div class="proto-grid">
+
+        <!-- Proto 1 -->
+        <div class="proto-card reveal delay-1">
+          <div class="proto-screen" style="background:linear-gradient(135deg,#667eea22,#764ba222);">
+            <div class="proto-frame">
+              <div class="proto-notch"></div>
+              <div class="proto-frame-body" style="background:linear-gradient(135deg,#667eea,#764ba2);border-radius:4px;display:flex;align-items:center;justify-content:center;color:white;font-size:0.6rem;font-weight:600;text-align:center;padding:8px;">
+                🛒<br/>Grocery<br/>App
+              </div>
+            </div>
+            <div style="position:absolute;inset:0;pointer-events:none;background:radial-gradient(circle at center, rgba(99,102,241,0.06) 0%, transparent 70%)"></div>
+          </div>
+          <div class="proto-info">
+            <h3>Grocery App Flow</h3>
+            <p>Complete onboarding → browse → cart → checkout flow with 18 interactive screens.</p>
+            <a href="#" class="proto-link" onclick="showToast('🛒 Opening Grocery App flow in Figma…');return false;">
+              View Full Flow →
+            </a>
+          </div>
+        </div>
+
+        <!-- Proto 2 -->
+        <div class="proto-card reveal delay-2">
+          <div class="proto-screen" style="background:linear-gradient(135deg,#0f202722,#2c536422);">
+            <div class="proto-frame">
+              <div class="proto-notch"></div>
+              <div class="proto-frame-body" style="background:linear-gradient(135deg,#0f2027,#2c5364);border-radius:4px;display:flex;align-items:center;justify-content:center;color:white;font-size:0.6rem;font-weight:600;text-align:center;padding:8px;">
+                💳<br/>Banking<br/>UI
+              </div>
+            </div>
+          </div>
+          <div class="proto-info">
+            <h3>Banking Dashboard</h3>
+            <p>Financial overview, transaction history, and analytics with responsive dark-mode UI.</p>
+            <a href="#" class="proto-link" onclick="showToast('💳 Opening Banking Dashboard prototype…');return false;">View Full Flow →</a>
+          </div>
+        </div>
+
+        <!-- Proto 3 -->
+        <div class="proto-card reveal delay-3">
+          <div class="proto-screen" style="background:linear-gradient(135deg,#eb334922,#f45c4322);">
+            <div class="proto-frame">
+              <div class="proto-notch"></div>
+              <div class="proto-frame-body" style="background:linear-gradient(135deg,#eb3349,#f45c43);border-radius:4px;display:flex;align-items:center;justify-content:center;color:white;font-size:0.6rem;font-weight:600;text-align:center;padding:8px;">
+                🍕<br/>Food<br/>Delivery
+              </div>
+            </div>
+          </div>
+          <div class="proto-info">
+            <h3>Food Delivery App</h3>
+            <p>From restaurant discovery to live tracking — 22 screens of immersive food ordering experience.</p>
+            <a href="#" class="proto-link" onclick="showToast('🍕 Opening Food Delivery prototype…');return false;">View Full Flow →</a>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       DESIGN PROCESS TIMELINE
+  ═══════════════════════════════════ -->
+  <section id="process" aria-label="Design process">
+    <div class="max-w">
+      <div class="section-header">
+        <span class="section-tag reveal">✦ Methodology</span>
+        <h2 class="section-title reveal">My <span>Design Process</span></h2>
+        <p class="section-subtitle reveal">A structured, research-driven workflow that transforms user insights into polished, high-fidelity design solutions.</p>
+      </div>
+
+      <div class="process-timeline">
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-step">Step 01</div>
+            <h3>Research & Discovery</h3>
+            <p>Conduct user interviews, competitive analysis, and market research to deeply understand user needs, pain points, and business goals.</p>
+          </div>
+          <div class="timeline-dot">🔍</div>
+          <div class="timeline-empty"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-empty"></div>
+          <div class="timeline-dot">👤</div>
+          <div class="timeline-content">
+            <div class="timeline-step">Step 02</div>
+            <h3>User Persona</h3>
+            <p>Create detailed user personas based on research data to represent target audience segments and guide design decisions empathetically.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-step">Step 03</div>
+            <h3>User Journey Mapping</h3>
+            <p>Map complete user journeys to identify touchpoints, emotions, and opportunities for improving the overall user experience.</p>
+          </div>
+          <div class="timeline-dot">🗺️</div>
+          <div class="timeline-empty"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-empty"></div>
+          <div class="timeline-dot">✏️</div>
+          <div class="timeline-content">
+            <div class="timeline-step">Step 04</div>
+            <h3>Wireframing</h3>
+            <p>Rapidly sketch low-fidelity wireframes to explore layout ideas, information architecture, and core user flows without visual distraction.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-step">Step 05</div>
+            <h3>Low-Fidelity Prototype</h3>
+            <p>Build interactive low-fidelity prototypes to test core user flows early and gather quick feedback before investing in visual design.</p>
+          </div>
+          <div class="timeline-dot">📐</div>
+          <div class="timeline-empty"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-empty"></div>
+          <div class="timeline-dot">🎨</div>
+          <div class="timeline-content">
+            <div class="timeline-step">Step 06</div>
+            <h3>High-Fidelity Prototype</h3>
+            <p>Craft pixel-perfect, interactive Figma prototypes with a complete design system, components, variants, and realistic micro-interactions.</p>
+          </div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-content">
+            <div class="timeline-step">Step 07</div>
+            <h3>Usability Testing</h3>
+            <p>Conduct moderated and unmoderated usability tests, analyze task completion rates, identify friction points, and iterate rapidly.</p>
+          </div>
+          <div class="timeline-dot">🧪</div>
+          <div class="timeline-empty"></div>
+        </div>
+
+        <div class="timeline-item reveal">
+          <div class="timeline-empty"></div>
+          <div class="timeline-dot">🏆</div>
+          <div class="timeline-content">
+            <div class="timeline-step">Step 08</div>
+            <h3>Final Design & Handoff</h3>
+            <p>Deliver developer-ready design specs, assets, and documentation ensuring seamless transition from design to implementation.</p>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       SKILLS SECTION
+  ═══════════════════════════════════ -->
+  <section id="skills" style="background:var(--bg-primary);" aria-label="Skills and tools">
+    <div class="skills-container">
+      <div class="section-header">
+        <span class="section-tag reveal">✦ Expertise</span>
+        <h2 class="section-title reveal">Tools & <span>Skills</span></h2>
+        <p class="section-subtitle reveal">A comprehensive toolkit for creating exceptional user experiences from concept to delivery.</p>
+      </div>
+
+      <div class="skills-grid">
+        <div class="skill-card reveal delay-1">
+          <span class="skill-icon">🎨</span>
+          <div class="skill-name">Figma</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="95"></div></div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <span class="skill-icon">🖌️</span>
+          <div class="skill-name">Adobe XD</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="85"></div></div>
+        </div>
+        <div class="skill-card reveal delay-3">
+          <span class="skill-icon">🖼️</span>
+          <div class="skill-name">Photoshop</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="80"></div></div>
+        </div>
+        <div class="skill-card reveal delay-4">
+          <span class="skill-icon">✍️</span>
+          <div class="skill-name">Illustrator</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="78"></div></div>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <span class="skill-icon">💻</span>
+          <div class="skill-name">UI Design</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="96"></div></div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <span class="skill-icon">🔬</span>
+          <div class="skill-name">UX Research</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="88"></div></div>
+        </div>
+        <div class="skill-card reveal delay-3">
+          <span class="skill-icon">📱</span>
+          <div class="skill-name">Prototyping</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="92"></div></div>
+        </div>
+        <div class="skill-card reveal delay-4">
+          <span class="skill-icon">📐</span>
+          <div class="skill-name">Wireframing</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="94"></div></div>
+        </div>
+        <div class="skill-card reveal delay-1">
+          <span class="skill-icon">🏗️</span>
+          <div class="skill-name">Design Systems</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="89"></div></div>
+        </div>
+        <div class="skill-card reveal delay-2">
+          <span class="skill-icon">⚡</span>
+          <div class="skill-name">Auto Layout</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="93"></div></div>
+        </div>
+        <div class="skill-card reveal delay-3">
+          <span class="skill-icon">🧩</span>
+          <div class="skill-name">Components</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="91"></div></div>
+        </div>
+        <div class="skill-card reveal delay-4">
+          <span class="skill-icon">♿</span>
+          <div class="skill-name">Accessibility</div>
+          <div class="skill-bar-wrap"><div class="skill-bar" data-width="86"></div></div>
+        </div>
+      </div>
+
+      <!-- HCI Principles Pills -->
+      <div style="margin-top:20px;text-align:center;">
+        <p style="font-size:0.88rem;color:var(--text-muted);margin-bottom:20px;font-weight:500">HCI Principles Applied in Every Design</p>
+        <div style="display:flex;flex-wrap:wrap;gap:10px;justify-content:center;">
+          <span class="chip reveal">Consistency</span>
+          <span class="chip reveal delay-1">Visibility</span>
+          <span class="chip reveal delay-2">Feedback</span>
+          <span class="chip reveal delay-3">Accessibility</span>
+          <span class="chip reveal delay-4">Error Prevention</span>
+          <span class="chip reveal">User Control</span>
+          <span class="chip reveal delay-1">Recognition &gt; Recall</span>
+          <span class="chip reveal delay-2">Minimal Cognitive Load</span>
+          <span class="chip reveal delay-3">Responsive Design</span>
+          <span class="chip reveal delay-4">Intuitive Navigation</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       STATS SECTION
+  ═══════════════════════════════════ -->
+  <section id="stats" aria-label="Portfolio statistics">
+    <div class="stats-grid">
+      <div class="stat-item reveal">
+        <span class="stat-icon">🎨</span>
+        <span class="stat-number" data-target="25" data-suffix="+">0</span>
+        <span class="stat-label">UI Projects Completed</span>
+      </div>
+      <div class="stat-item reveal delay-1">
+        <span class="stat-icon">📱</span>
+        <span class="stat-number" data-target="15" data-suffix="+">0</span>
+        <span class="stat-label">High-Fidelity Prototypes</span>
+      </div>
+      <div class="stat-item reveal delay-2">
+        <span class="stat-icon">🖥️</span>
+        <span class="stat-number" data-target="100" data-suffix="+">0</span>
+        <span class="stat-label">Screens Designed</span>
+      </div>
+      <div class="stat-item reveal delay-3">
+        <span class="stat-icon">⭐</span>
+        <span class="stat-number" data-target="98" data-suffix="%">0</span>
+        <span class="stat-label">User Satisfaction Rate</span>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       TESTIMONIALS
+  ═══════════════════════════════════ -->
+  <section id="testimonials" aria-label="Client testimonials">
+    <div class="max-w">
+      <div class="section-header">
+        <span class="section-tag reveal">✦ Feedback</span>
+        <h2 class="section-title reveal">What People <span>Say</span></h2>
+        <p class="section-subtitle reveal">Honest feedback from users, professors, and collaborators on my UI/UX work.</p>
+      </div>
+
+      <div class="testimonials-grid">
+
+        <div class="testimonial-card reveal delay-1">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">
+            "The portfolio demonstrates an exceptionally strong grasp of HCI principles. The layouts are clean, consistent, and follow Nielsen's heuristics perfectly. The interactive prototypes feel truly professional."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar">DR</div>
+            <div class="author-info">
+              <h4>Dr. Ramesh Iyer</h4>
+              <p>HCI Professor, University</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-2">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">
+            "Excellent use of consistent styling throughout every screen. The colour palette choices, typography hierarchy, and spacing create an extremely polished and trustworthy feel. Best UI work I've reviewed this semester."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#11998e,#38ef7d)">PM</div>
+            <div class="author-info">
+              <h4>Priya Menon</h4>
+              <p>Senior UX Reviewer & Mentor</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-3">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">
+            "The interactive design elements and micro-animations significantly enhance usability without overwhelming the user. This is exactly how good UI should feel — invisible yet impactful."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#eb3349,#f45c43)">AK</div>
+            <div class="author-info">
+              <h4>Arjun Kumar</h4>
+              <p>Product Designer, StartupHub</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-1">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">
+            "Usability is clearly the top priority in every design decision. The navigation is intuitive, the affordances are clear, and I never felt confused about what to do next. Truly user-centered work."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#4776e6,#8e54e9)">SN</div>
+            <div class="author-info">
+              <h4>Sneha Nair</h4>
+              <p>UX Researcher, Tech Corp</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-2">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">
+            "Excellent understanding of modern UI/UX practices. The Figma components are well-structured, variant-ready, and the auto layout implementation is impeccable. Ready for real-world handoff."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#f7971e,#ffd200);color:#333">VR</div>
+            <div class="author-info">
+              <h4>Vijay Raj</h4>
+              <p>Lead Designer, DesignLab</p>
+            </div>
+          </div>
+        </div>
+
+        <div class="testimonial-card reveal delay-3">
+          <div class="stars">
+            <span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span><span class="star">★</span>
+          </div>
+          <p class="testimonial-text">
+            "The dark mode implementation, accessibility features, and responsive design show a mature understanding of inclusive design. This portfolio clearly demonstrates HCI best practices in action."
+          </p>
+          <div class="testimonial-author">
+            <div class="author-avatar" style="background:linear-gradient(135deg,#667eea,#764ba2)">MP</div>
+            <div class="author-info">
+              <h4>Meera Pillai</h4>
+              <p>Accessibility Consultant</p>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       CONTACT SECTION
+  ═══════════════════════════════════ -->
+  <section id="contact" aria-label="Contact section">
+    <div class="max-w">
+      <div class="section-header">
+        <span class="section-tag reveal">✦ Get In Touch</span>
+        <h2 class="section-title reveal">Let's <span>Collaborate</span></h2>
+        <p class="section-subtitle reveal">Have a project in mind or want to discuss design? I'd love to hear from you.</p>
+      </div>
+
+      <div class="contact-grid">
+        <!-- Info -->
+        <div class="contact-info reveal-left">
+          <h2>Ready to Create<br/>Something Amazing?</h2>
+          <p>Whether it's a full UI/UX project, design consultation, or a usability review — I'm here to help turn your ideas into exceptional digital experiences.</p>
+
+          <div class="contact-items">
+            <div class="contact-item">
+              <div class="contact-item-icon">📧</div>
+              <div class="contact-item-text">
+                <p>Email</p>
+                <strong>hello@designcraft.in</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">📍</div>
+              <div class="contact-item-text">
+                <p>Location</p>
+                <strong>Chennai, Tamil Nadu, India</strong>
+              </div>
+            </div>
+            <div class="contact-item">
+              <div class="contact-item-icon">⏰</div>
+              <div class="contact-item-text">
+                <p>Response Time</p>
+                <strong>Within 24 hours</strong>
+              </div>
+            </div>
+          </div>
+
+          <div class="social-links">
+            <a href="#" class="social-link" aria-label="LinkedIn" title="LinkedIn" onclick="showToast('🔗 Opening LinkedIn…');return false;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="GitHub" title="GitHub" onclick="showToast('🐙 Opening GitHub…');return false;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Behance" title="Behance" onclick="showToast('🎨 Opening Behance portfolio…');return false;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><path d="M22 7h-7V5h7v2zm1.726 10c-.442 1.297-2.029 3-5.101 3-3.074 0-5.564-1.729-5.564-5.675 0-3.91 2.325-5.92 5.466-5.92 3.082 0 4.964 1.782 5.375 4.426.078.506.109 1.188.095 2.14H15.97c.13 3.211 3.483 3.312 4.588 2.029H23.726zm-7.726-3h3.543c-.159-1.569-1.199-1.985-1.877-1.985-.701 0-1.683.418-1.666 1.985z"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Dribbble" title="Dribbble" onclick="showToast('🏀 Opening Dribbble shots…');return false;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="currentColor"><circle cx="12" cy="12" r="10"/><path d="M8.56 2.75c4.37 6.03 6.02 9.42 8.03 17.72m2.54-15.38c-3.72 4.35-8.94 5.66-16.88 5.85m19.5 1.9c-3.5-.93-6.63-.82-8.94 0-2.58.92-5.01 2.86-7.44 6.32"/></svg>
+            </a>
+            <a href="#" class="social-link" aria-label="Figma Community" title="Figma Community" onclick="showToast('🖌️ Opening Figma Community profile…');return false;">
+              <svg width="16" height="16" viewBox="0 0 38 57" fill="currentColor"><path d="M19 28.5C19 23.8 22.9 20 27.5 20C32.1 20 36 23.9 36 28.5C36 33.1 32.1 37 27.5 37C22.9 37 19 33.1 19 28.5Z"/><path d="M2 47C2 42.4 5.9 38.5 10.5 38.5H19V47C19 51.6 15.1 55.5 10.5 55.5C5.9 55.5 2 51.6 2 47Z"/><path d="M19 2V19.5H27.5C32.1 19.5 36 15.6 36 11C36 6.4 32.1 2.5 27.5 2.5H19Z"/><path d="M2 11C2 15.6 5.9 19.5 10.5 19.5H19V2.5H10.5C5.9 2.5 2 6.4 2 11Z"/><path d="M2 28.5C2 33.1 5.9 37 10.5 37H19V20H10.5C5.9 20 2 23.9 2 28.5Z"/></svg>
+            </a>
+          </div>
+        </div>
+
+        <!-- Form -->
+        <div class="contact-form-wrap reveal-right">
+          <form id="contactForm" onsubmit="handleSubmit(event)" novalidate aria-label="Contact form">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">First Name *</label>
+                <input type="text" id="firstName" name="firstName" placeholder="Arjun" required autocomplete="given-name" />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Last Name *</label>
+                <input type="text" id="lastName" name="lastName" placeholder="Kumar" required autocomplete="family-name" />
+              </div>
+            </div>
+
+            <div class="form-group">
+              <label for="email">Email Address *</label>
+              <input type="email" id="email" name="email" placeholder="arjun@example.com" required autocomplete="email" />
+            </div>
+
+            <div class="form-group">
+              <label for="subject">Subject</label>
+              <input type="text" id="subject" name="subject" placeholder="Project Collaboration / Design Review" />
+            </div>
+
+            <div class="form-group">
+              <label for="message">Message *</label>
+              <textarea id="message" name="message" rows="5" placeholder="Tell me about your project, goals, and how I can help…" required></textarea>
+            </div>
+
+            <button type="submit" class="btn btn-primary" style="width:100%;justify-content:center;" id="submitBtn" onclick="addRipple(event,this)">
+              <span id="btnText">✉️ Send Message</span>
+            </button>
+
+            <p style="font-size:0.78rem;color:var(--text-muted);text-align:center;margin-top:12px;">
+              🔒 Your message is private and will only be used to respond to your inquiry.
+            </p>
+          </form>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FIGMA SHOWCASE SECTION
+  ═══════════════════════════════════ -->
+  <section id="showcase" aria-label="Figma prototype showcase" style="background:var(--bg-secondary); padding:80px 5%;">
+    <div class="max-w">
+      <div class="section-header">
+        <span class="section-tag reveal">✦ Figma Gallery</span>
+        <h2 class="section-title reveal">All Projects <span>at a Glance</span></h2>
+        <p class="section-subtitle reveal" style="margin:0 auto;">
+          A complete overview of all six high-fidelity Figma prototypes — from grocery apps to learning platforms,
+          each designed with meticulous attention to HCI principles.
+        </p>
+      </div>
+
+      <div class="showcase-wrapper reveal">
+        <div class="showcase-img-container">
+          <img
+            src="project_previews.png"
+            alt="Six Figma prototype previews: Online Grocery, Banking Dashboard, Hospital UI, E-Commerce, Food Delivery, and Learning Management System"
+            class="showcase-img"
+            loading="lazy"
+          />
+          <div class="showcase-overlay" aria-hidden="true">
+            <a href="#projects" class="btn btn-primary" onclick="addRipple(event,this)">
+              🎨 Explore Projects
+            </a>
+          </div>
+        </div>
+
+        <div class="showcase-chips">
+          <span class="chip reveal delay-1">🛒 Online Grocery</span>
+          <span class="chip reveal delay-2">💳 Banking Dashboard</span>
+          <span class="chip reveal delay-3">🏥 Hospital UI</span>
+          <span class="chip reveal delay-1">🛍️ E-Commerce</span>
+          <span class="chip reveal delay-2">🍕 Food Delivery</span>
+          <span class="chip reveal delay-3">📚 Learning Platform</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ═══════════════════════════════════
+       FOOTER
+  ═══════════════════════════════════ -->
+  <footer role="contentinfo">
+    <div class="footer-grid">
+      <!-- Brand -->
+      <div class="footer-brand">
+        <a href="#home" class="nav-logo" style="font-size:1.5rem;display:inline-block;margin-bottom:12px;">✦ DesignCraft</a>
+        <p>A premium UI/UX portfolio showcasing high-fidelity prototypes built with Figma, guided by HCI principles and a passion for user-centered design.</p>
+        <div class="social-links" style="margin-top:16px;">
+          <a href="#" class="social-link" aria-label="LinkedIn" onclick="showToast('🔗 LinkedIn');return false;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M16 8a6 6 0 0 1 6 6v7h-4v-7a2 2 0 0 0-2-2 2 2 0 0 0-2 2v7h-4v-7a6 6 0 0 1 6-6zM2 9h4v12H2z"/><circle cx="4" cy="4" r="2"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="GitHub" onclick="showToast('🐙 GitHub');return false;">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="currentColor"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+          </a>
+          <a href="#" class="social-link" aria-label="Behance" onclick="showToast('🎨 Behance');return false;">Be</a>
+          <a href="#" class="social-link" aria-label="Dribbble" onclick="showToast('🏀 Dribbble');return false;">Dr</a>
+        </div>
+      </div>
+
+      <!-- Quick Links -->
+      <div class="footer-col">
+        <h4>Quick Links</h4>
+        <ul>
+          <li><a href="#home">→ Home</a></li>
+          <li><a href="#about">→ About Me</a></li>
+          <li><a href="#projects">→ UI Projects</a></li>
+          <li><a href="#prototypes">→ Prototypes</a></li>
+          <li><a href="#process">→ Design Process</a></li>
+        </ul>
+      </div>
+
+      <!-- Work -->
+      <div class="footer-col">
+        <h4>My Work</h4>
+        <ul>
+          <li><a href="#" onclick="showToast('🛒 Grocery App');return false;">→ Grocery App</a></li>
+          <li><a href="#" onclick="showToast('💳 Banking UI');return false;">→ Banking Dashboard</a></li>
+          <li><a href="#" onclick="showToast('🏥 Hospital UI');return false;">→ Hospital UI</a></li>
+          <li><a href="#" onclick="showToast('🍕 Food Delivery');return false;">→ Food Delivery</a></li>
+          <li><a href="#" onclick="showToast('📚 LMS');return false;">→ Learning Platform</a></li>
+        </ul>
+      </div>
+
+      <!-- Resources -->
+      <div class="footer-col">
+        <h4>Resources</h4>
+        <ul>
+          <li><a href="#" onclick="showToast('📄 Opening Design System…');return false;">→ Design System</a></li>
+          <li><a href="#" onclick="showToast('🎨 Opening Figma Files…');return false;">→ Figma Files</a></li>
+          <li><a href="#" onclick="showToast('📖 Opening Case Studies…');return false;">→ Case Studies</a></li>
+          <li><a href="#contact">→ Hire Me</a></li>
+          <li><a href="#" onclick="showToast('📄 Downloading CV…');return false;">→ Download CV</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Footer Bottom -->
+    <div class="footer-bottom">
+      <p>© 2026 DesignCraft. All rights reserved.</p>
+      <div class="made-with">
+        Designed with <span>❤️</span> using
+        <svg width="14" height="14" viewBox="0 0 38 57" fill="none" style="margin:0 3px" xmlns="http://www.w3.org/2000/svg">
+          <path d="M19 28.5C19 23.8 22.9 20 27.5 20C32.1 20 36 23.9 36 28.5C36 33.1 32.1 37 27.5 37C22.9 37 19 33.1 19 28.5Z" fill="#1ABCFE"/>
+          <path d="M2 47C2 42.4 5.9 38.5 10.5 38.5H19V47C19 51.6 15.1 55.5 10.5 55.5C5.9 55.5 2 51.6 2 47Z" fill="#0ACF83"/>
+          <path d="M19 2V19.5H27.5C32.1 19.5 36 15.6 36 11C36 6.4 32.1 2.5 27.5 2.5H19Z" fill="#FF7262"/>
+          <path d="M2 11C2 15.6 5.9 19.5 10.5 19.5H19V2.5H10.5C5.9 2.5 2 6.4 2 11Z" fill="#F24E1E"/>
+          <path d="M2 28.5C2 33.1 5.9 37 10.5 37H19V20H10.5C5.9 20 2 23.9 2 28.5Z" fill="#A259FF"/>
+        </svg>
+        Figma
+      </div>
+      <p style="color:var(--text-muted);font-size:0.78rem;">HCI Project — University Portfolio 2026</p>
+    </div>
+  </footer>
+
+  <!-- Toast Notification -->
+  <div id="toast" role="status" aria-live="polite" aria-atomic="true">
+    <span id="toast-icon">✅</span>
+    <span id="toast-text">Action completed</span>
+  </div>
+
+  <!-- Back to Top -->
+  <button id="back-to-top" aria-label="Back to top" title="Back to top" onclick="window.scrollTo({top:0,behavior:'smooth'})">
+    ↑
+  </button>
+
+  <!-- ═══════════════════════════════════
+       JAVASCRIPT
+  ═══════════════════════════════════ -->
+  <script>
+    /* ─── Loader ─── */
+    window.addEventListener('load', () => {
+      setTimeout(() => {
+        document.getElementById('loader').classList.add('hidden');
+      }, 1900);
+    });
+
+    /* ─── Theme Toggle ─── */
+    const themeToggle = document.getElementById('themeToggle');
+    const html = document.documentElement;
+
+    function setTheme(theme) {
+      html.setAttribute('data-theme', theme);
+      themeToggle.textContent = theme === 'dark' ? '☀️' : '🌙';
+      localStorage.setItem('hci-theme', theme);
+    }
+
+    const savedTheme = localStorage.getItem('hci-theme') || 'light';
+    setTheme(savedTheme);
+
+    themeToggle.addEventListener('click', () => {
+      const current = html.getAttribute('data-theme');
+      setTheme(current === 'dark' ? 'light' : 'dark');
+    });
+
+    /* ─── Mobile Nav ─── */
+    const hamburger = document.getElementById('hamburger');
+    const mobileNav = document.getElementById('mobileNav');
+
+    hamburger.addEventListener('click', () => {
+      const isOpen = mobileNav.classList.toggle('open');
+      hamburger.setAttribute('aria-expanded', isOpen);
+      mobileNav.setAttribute('aria-hidden', !isOpen);
+      const spans = hamburger.querySelectorAll('span');
+      if (isOpen) {
+        spans[0].style.transform = 'rotate(45deg) translate(5px, 5px)';
+        spans[1].style.opacity = '0';
+        spans[2].style.transform = 'rotate(-45deg) translate(5px, -5px)';
+      } else {
+        spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+      }
+    });
+
+    // Keyboard support for hamburger
+    hamburger.addEventListener('keydown', (e) => {
+      if (e.key === 'Enter' || e.key === ' ') {
+        e.preventDefault();
+        hamburger.click();
+      }
+    });
+
+    // Escape key closes mobile nav
+    document.addEventListener('keydown', (e) => {
+      if (e.key === 'Escape' && mobileNav.classList.contains('open')) {
+        mobileNav.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        const spans = hamburger.querySelectorAll('span');
+        spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+      }
+    });
+
+    mobileNav.querySelectorAll('a').forEach(a => {
+      a.addEventListener('click', () => {
+        mobileNav.classList.remove('open');
+        hamburger.setAttribute('aria-expanded', 'false');
+        mobileNav.setAttribute('aria-hidden', 'true');
+        const spans = hamburger.querySelectorAll('span');
+        spans.forEach(s => { s.style.transform = ''; s.style.opacity = ''; });
+      });
+    });
+
+    /* ─── Sticky Nav + Active Link ─── */
+    const navbar = document.getElementById('navbar');
+    const sections = document.querySelectorAll('section[id]');
+    const navLinks = document.querySelectorAll('.nav-links a');
+
+    const scrollHandler = () => {
+      const scrollY = window.scrollY;
+
+      // Sticky style
+      navbar.classList.toggle('scrolled', scrollY > 60);
+
+      // Back to top
+      document.getElementById('back-to-top').classList.toggle('visible', scrollY > 400);
+
+      // Scroll progress
+      const docHeight = document.documentElement.scrollHeight - window.innerHeight;
+      document.getElementById('scroll-progress').style.width = `${(scrollY / docHeight) * 100}%`;
+
+      // Active nav link
+      let current = '';
+      sections.forEach(sec => {
+        if (scrollY >= sec.offsetTop - 120) current = sec.id;
+      });
+      navLinks.forEach(link => {
+        link.classList.toggle('active', link.getAttribute('href') === `#${current}`);
+      });
+    };
+
+    window.addEventListener('scroll', scrollHandler, { passive: true });
+
+    /* ─── Cursor Glow ─── */
+    const cursorGlow = document.getElementById('cursorGlow');
+    document.addEventListener('mousemove', (e) => {
+      cursorGlow.style.left = e.clientX + 'px';
+      cursorGlow.style.top = e.clientY + 'px';
+    });
+
+    /* ─── Scroll Reveal ─── */
+    const revealObserver = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('revealed');
+          // Animate skill bars
+          const bar = entry.target.querySelector?.('.skill-bar');
+          if (bar) {
+            const w = bar.dataset.width;
+            setTimeout(() => { bar.style.width = w + '%'; }, 200);
+          }
+          // Animate counters
+          const counter = entry.target.querySelector?.('.stat-number[data-target]');
+          if (counter) animateCounter(counter);
+        }
+      });
+    }, { threshold: 0.15, rootMargin: '0px 0px -60px 0px' });
+
+    document.querySelectorAll('.reveal, .reveal-left, .reveal-right').forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    // Also observe skill cards, stat items, timeline items, project/proto cards
+    document.querySelectorAll('.skill-card, .stat-item, .timeline-item, .project-card, .proto-card, .testimonial-card').forEach(el => {
+      revealObserver.observe(el);
+    });
+
+    /* ─── Counter Animation ─── */
+    function animateCounter(el) {
+      if (el.dataset.animated) return;
+      el.dataset.animated = '1';
+      const target = parseInt(el.dataset.target);
+      const suffix = el.dataset.suffix || '';
+      const duration = 1800;
+      const start = performance.now();
+
+      const update = (now) => {
+        const elapsed = Math.min((now - start) / duration, 1);
+        const eased = 1 - Math.pow(1 - elapsed, 3);
+        el.textContent = Math.round(eased * target) + suffix;
+        if (elapsed < 1) requestAnimationFrame(update);
+      };
+      requestAnimationFrame(update);
+    }
+
+    /* ─── Ripple Effect ─── */
+    function addRipple(e, btn) {
+      const rect = btn.getBoundingClientRect();
+      const ripple = document.createElement('span');
+      ripple.classList.add('ripple');
+      const size = Math.max(rect.width, rect.height);
+      ripple.style.width = ripple.style.height = size + 'px';
+      ripple.style.left = (e.clientX - rect.left - size / 2) + 'px';
+      ripple.style.top = (e.clientY - rect.top - size / 2) + 'px';
+      btn.appendChild(ripple);
+      setTimeout(() => ripple.remove(), 700);
+    }
+
+    /* ─── Toast Notification ─── */
+    let toastTimeout;
+    function showToast(msg) {
+      const toast = document.getElementById('toast');
+      document.getElementById('toast-text').textContent = msg;
+      toast.classList.add('show');
+      clearTimeout(toastTimeout);
+      toastTimeout = setTimeout(() => toast.classList.remove('show'), 3000);
+    }
+
+    /* ─── Contact Form ─── */
+    function handleSubmit(e) {
+      e.preventDefault();
+      const btn = document.getElementById('submitBtn');
+      const text = document.getElementById('btnText');
+
+      // Validate
+      const firstName = document.getElementById('firstName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const message = document.getElementById('message').value.trim();
+
+      if (!firstName || !email || !message) {
+        showToast('⚠️ Please fill in all required fields');
+        return;
+      }
+
+      if (!/^[^\s@]+@[^\s@]+\.[^\s@]+$/.test(email)) {
+        showToast('⚠️ Please enter a valid email address');
+        return;
+      }
+
+      // Simulate send
+      btn.disabled = true;
+      text.textContent = '⏳ Sending…';
+
+      setTimeout(() => {
+        text.textContent = '✅ Message Sent!';
+        showToast('🎉 Thank you! I\'ll respond within 24 hours.');
+        document.getElementById('contactForm').reset();
+        setTimeout(() => {
+          text.textContent = '✉️ Send Message';
+          btn.disabled = false;
+        }, 3000);
+      }, 1500);
+    }
+
+    /* ─── Smooth anchor scrolling fix for Nav ─── */
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        const target = document.querySelector(this.getAttribute('href'));
+        if (target) {
+          e.preventDefault();
+          target.scrollIntoView({ behavior: 'smooth', block: 'start' });
+        }
+      });
+    });
+
+    /* ─── Bounce keyframe ─── */
+    const style = document.createElement('style');
+    style.textContent = `
+      @keyframes bounce {
+        0%, 100% { transform: translateY(0) translateX(-50%); }
+        50% { transform: translateY(10px) translateX(-50%); }
+      }
+    `;
+    document.head.appendChild(style);
+
+    /* ─── Parallax on scroll for orbs ─── */
+    window.addEventListener('scroll', () => {
+      const y = window.scrollY;
+      document.querySelector('.orb-1').style.transform = `translate(${y * 0.05}px, ${-y * 0.08}px) scale(1)`;
+      document.querySelector('.orb-2').style.transform = `translate(${-y * 0.03}px, ${y * 0.05}px) scale(1)`;
+    }, { passive: true });
+
+    /* ─── Typewriter Effect (Hero Badge) ─── */
+    const roles = [
+      'Available for Freelance & Internships',
+      'UI/UX Designer | HCI Specialist',
+      'Figma Expert | Prototyping Pro',
+      'User-Centered Design Advocate'
+    ];
+    const heroBadge = document.querySelector('.hero-badge');
+    if (heroBadge) {
+      let roleIdx = 0;
+      let charIdx = 0;
+      let deleting = false;
+      const dot = heroBadge.querySelector('.dot');
+      let textNode = null;
+
+      // Find or create text node after dot
+      heroBadge.childNodes.forEach(n => {
+        if (n.nodeType === 3 && n.textContent.trim()) textNode = n;
+      });
+      if (!textNode) {
+        textNode = document.createTextNode('');
+        heroBadge.appendChild(textNode);
+      }
+
+      function typeWriter() {
+        const current = roles[roleIdx];
+        if (!deleting) {
+          textNode.textContent = ' ' + current.slice(0, charIdx + 1);
+          charIdx++;
+          if (charIdx === current.length) {
+            deleting = true;
+            setTimeout(typeWriter, 2200);
+            return;
+          }
+        } else {
+          textNode.textContent = ' ' + current.slice(0, charIdx - 1);
+          charIdx--;
+          if (charIdx === 0) {
+            deleting = false;
+            roleIdx = (roleIdx + 1) % roles.length;
+          }
+        }
+        setTimeout(typeWriter, deleting ? 40 : 70);
+      }
+      setTimeout(typeWriter, 2000);
+    }
+
+    /* ─── 3D Card Tilt on Hover ─── */
+    document.querySelectorAll('.project-card').forEach(card => {
+      card.addEventListener('mousemove', (e) => {
+        const rect = card.getBoundingClientRect();
+        const x = e.clientX - rect.left;
+        const y = e.clientY - rect.top;
+        const cx = rect.width / 2;
+        const cy = rect.height / 2;
+        const rotX = ((y - cy) / cy) * -6;
+        const rotY = ((x - cx) / cx) * 6;
+        card.style.transform = `perspective(800px) rotateX(${rotX}deg) rotateY(${rotY}deg) translateY(-8px)`;
+      });
+      card.addEventListener('mouseleave', () => {
+        card.style.transform = '';
+      });
+    });
+
+    /* ─── Showcase Image Fade-In ─── */
+    const showcaseImg = document.querySelector('.showcase-img');
+    if (showcaseImg) {
+      showcaseImg.style.opacity = '0';
+      showcaseImg.style.transition = 'opacity 0.8s ease';
+      showcaseImg.addEventListener('load', () => {
+        showcaseImg.style.opacity = '1';
+      });
+      if (showcaseImg.complete) showcaseImg.style.opacity = '1';
+    }
+
+    console.log('%c✦ DesignCraft Portfolio', 'color:#6366f1;font-size:1.5rem;font-weight:bold;letter-spacing:-0.5px');
+    console.log('%cBuilt with HCI principles • Figma • Vanilla JS • Premium Design', 'color:#8b5cf6;font-size:0.9rem');
+    console.log('%c🎨 6 Projects | 25+ Components | WCAG 2.1 Accessible', 'color:#06b6d4;font-size:0.85rem');
+  </script>
+
+</body>
+</html>
